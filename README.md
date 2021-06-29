@@ -2,9 +2,7 @@
 人工智能和量化从这开始
 
 <p align="center">
-<a href="http://www.baoai.co/" target="_blank">
-    <img style="vertical-align: top;" src="./assets/img/logo.png" alt="logo" height="50px">
-</a>
+
 <br>
 <br>
     <img src ="https://img.shields.io/badge/version-2.0.0-blueviolet.svg"/>
