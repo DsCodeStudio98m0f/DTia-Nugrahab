@@ -2,9 +2,7 @@
 人工智能和量化从这开始
 
 <p align="center">
-<a href="http://www.baoai.co/" target="_blank">
-    <img style="vertical-align: top;" src="./assets/img/logo.png" alt="logo" height="50px">
-</a>
+
 <br>
 <br>
     <img src ="https://img.shields.io/badge/version-2.0.0-blueviolet.svg"/>
@@ -104,7 +102,8 @@ cd /baoai/BaoaiBack
 # windows 安装依赖库
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-# 如果下载速度慢可以采用国内镜像
+# 如果下载速度慢可以采用国内镜像(推荐)
+python -m pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
 
 # linux 安装依赖库
@@ -115,6 +114,7 @@ pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
 
 # 3. 运行 Restful 服务
 # windows
+# 默认访问：http://localhost:5000/api
 run_baoai.bat
 
 # linux
