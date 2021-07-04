@@ -76,6 +76,18 @@ BaoAI前后端分离框构，包含有前端项目和后端项目
 
 需要 [Python 3.6](http://www.python.org) 
 
+安装依赖库国内常用镜像
+
+```
+https://pypi.tuna.tsinghua.edu.cn/simple/   # 清华大学
+https://mirrors.aliyun.com/pypi/simple/     # 阿里云
+https://pypi.douban.com/simple/             # 豆瓣
+https://pypi.mirrors.ustc.edu.cn/simple/    # 中国科学技术大学
+https://pypi.hustunique.com/                # 华中科技大学
+```
+
+安装步骤：
+
 ```shell
 # 1. 创建虚拟环境
 # windows, 假设项目根路径：d:/baoai/BaoaiBack/
