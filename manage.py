@@ -13,7 +13,7 @@ import os
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager, Shell, Server, Command
 from flask_script.commands import Clean, ShowUrls
-from app import create_app, db
+from app import *
 
 # app,celery = create_app() 
 app = create_app()
@@ -27,7 +27,8 @@ def make_shell_context():
 # Get BaoAI version and URL # 获取BaoAI版本及官方URL
 @manager.command  
 def baoai():  
-    print('BaoAI v2.0.0 - http://www.baoai.co')
+    print('BaoAI v%s - http://www.baoai.co'%__version__)
+    print('Desc\n%s'%__description__)
 
 manager.add_command("runserver", Server(host='0.0.0.0', port=5000))
 manager.add_command("shell", Shell(make_context=make_shell_context))

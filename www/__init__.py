@@ -7,6 +7,11 @@ from celery import Celery
 import arrow
 import logging_config
 
+__version__ = '2.0.1'
+__description__ = '''小宝人工智能和量化平台
+2.0.1 增加log目录，requirements增加pylint
+'''
+
 db = SQLAlchemy()
 Config = config[os.getenv('FLASK_CONFIG') or 'default']
 celery = None
@@ -32,3 +37,12 @@ def create_app():
     def now_datetime(format='YYYY-MM-DD HH:mm:ss'):
         return arrow.now().format(format)
     return app #, celery
+
+__all__ = (
+    '__version__',
+    '__description__',
+    'db',
+    'Config',
+    'celery',
+    'create_app'
+)
